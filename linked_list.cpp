@@ -33,5 +33,8 @@ struct LinkedList {
 
 int main() {
     LinkedList list;
+    list.Append(1);
+    list.Append(2);
+    list.Append(3);
     return 0;
 }
