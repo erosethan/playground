@@ -11,8 +11,12 @@ struct Node {
 };
 
 struct LinkedList {
+    Element size_of;
+    LinkedList() : size_of(0), head(nullptr), tail(nullptr) {}
 
-    LinkedList() : head(nullptr), tail(nullptr) {}
+    int size(){
+        return size_of;
+    }
 
     bool IsEmpty() const {
         return head == nullptr;
