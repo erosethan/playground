@@ -11,10 +11,10 @@ struct Node {
 };
 
 struct LinkedList {
-    Element size_of;
+    int size_of;
     LinkedList() : size_of(0), head(nullptr), tail(nullptr) {}
 
-    int size(){
+    const int Size(){
         return size_of;
     }
 
@@ -29,7 +29,7 @@ struct LinkedList {
         } else {
             tail->next = node;
             tail = node;
-        }
+        } size_of++;
     }
 
     Node* head, *tail;
