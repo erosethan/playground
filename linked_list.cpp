@@ -29,7 +29,8 @@ struct LinkedList {
         } else {
             tail->next = node;
             tail = node;
-        } size_of++;
+        } 
+        size_of++;
     }
 
     Node* head, *tail;
